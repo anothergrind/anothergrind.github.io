@@ -11,3 +11,7 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+
+# On Windows, tzinfo needs the tzinfo-data gem to provide zoneinfo files.
+# This fixes the "No source of timezone data could be found" error.
+gem 'tzinfo-data', platforms: %i[windows]
