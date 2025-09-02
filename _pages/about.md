@@ -18,6 +18,7 @@ My research interests lie in **machine learning and quantum computing**.
 Overall I am interested about the intersection of machine learning and quantum computing.
 
 ## News
+* **08/2025:** I have been accepted into CodePath's Technical Interview Prep 
 * **08/2025:** I created my personal portfolio
 
 ## Education
