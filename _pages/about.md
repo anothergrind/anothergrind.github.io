@@ -28,6 +28,7 @@ Here's a link to my current [CV](/files/Kamsi_Ozorji_CV.pdf)
 * BS in Computer Science, University of Texas at Dallas
   * Minor in Cognitive Science
   * Certificate in Quantum Information Science  
+  * Certificate in Biobehavioral Data Science
 
 ## Affiliated Organizations
 * SEO
