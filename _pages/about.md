@@ -16,10 +16,16 @@ Here's a link to my current [CV](/files/Kamsi_Ozorji_CV.pdf)
 
 ## News
 
+* **12/2025:** I have started Undergraduate Research at the University of Texas at Dallas, advised by Sonya Hossain and Jiyuan Wang
+
 * **11/2025:** I have been accepted into CodePath's Foundation's of AI Engineering
+
 * **10/2025:** I accepted a return offer to join Atlassian as an SWE Intern for Summer 2026
+
 * **09/2025:** Completed Machine Learning Specialization, by Andrew Ng and DeepLearning.AI
+
 * **08/2025:** I have been accepted into CodePath's Technical Interview Prep
+
 * **08/2025:** I created my personal portfolio
 
 ## Education
