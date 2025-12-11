@@ -12,8 +12,6 @@ Hey y'all, I am a junior from the University of Texas at Dallas, majoring in Com
 
 My research interests lie in **artificial intelligence, machine learning, natural langauge processing and quantum computing**.
 
-Here's a link to my current [CV](/files/Kamsi_Ozorji_CV.pdf)
-
 ## News
 
 * **12/2025:** I have started Undergraduate Research at the University of Texas at Dallas, advised by Sonya Hossain and Jiyuan Wang
