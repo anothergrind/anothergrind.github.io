@@ -14,7 +14,9 @@ My research interests lie in **artificial intelligence, machine learning, natura
 
 ## News
 
-* **12/2025:** I have started Undergraduate Research at the University of Texas at Dallas, advised by Sonya Hossain and Jiyuan Wang
+* **2/2026:**  I have started Explainable AI Research at UTD, advised by Beiyu Lin
+
+* **12/2025:** I have started Quantum Software Engineering Research at the UTD, advised by Soneya Hossain and Jiyuan Wang
 
 * **11/2025:** I have been accepted into CodePath's Foundation's of AI Engineering
 
