@@ -10,7 +10,7 @@ redirect_from:
 Hey y'all, I am a junior from the University of Texas at Dallas, majoring in Computer Science, and pursuing a certificates in quantum information science
  and biobehavioral data science
 
-My research interests lie in **artificial intelligence, machine learning, natural langauge processing and quantum computing**.
+My research interests lie in **artificial intelligence, machine learning, and quantum computing**.
 
 ## News
 
