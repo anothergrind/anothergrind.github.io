@@ -22,16 +22,6 @@ My research interests lie in **artificial intelligence, machine learning, and qu
 
 * **12/2025:** I have started Quantum Software Engineering Research at the UTD, advised by Soneya Hossain and Jiyuan Wang
 
-* **11/2025:** I have been accepted into CodePath's Foundation's of AI Engineering
-
-* **10/2025:** I accepted a return offer to join Atlassian as an SWE Intern for Summer 2026
-
-* **09/2025:** Completed Machine Learning Specialization, by Andrew Ng and DeepLearning.AI
-
-* **08/2025:** I have been accepted into CodePath's Technical Interview Prep
-
-* **08/2025:** I created my personal portfolio
-
 ## Education
 
 * BS in Computer Science, University of Texas at Dallas
