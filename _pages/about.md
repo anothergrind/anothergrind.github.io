@@ -14,6 +14,8 @@ My research interests lie in **artificial intelligence, machine learning, and qu
 
 ## News
 
+* **3/2026:** I have been accepted to Break Through Tech's AI Program
+
 * **2/2026:**  I have started Explainable AI Research at UTD, advised by Beiyu Lin
 
 * **12/2025:** I have started Quantum Software Engineering Research at the UTD, advised by Soneya Hossain and Jiyuan Wang
