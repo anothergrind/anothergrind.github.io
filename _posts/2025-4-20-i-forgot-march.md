@@ -1,5 +1,5 @@
 ---
-title: 'i forgot march blog, so heres a recap'
+title: 'i forgot march'
 date: 2026-4-20
 permalink: /posts/2026/4/i forgot march/
 tags:
