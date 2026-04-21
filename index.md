@@ -4,9 +4,13 @@ title: "Home"
 permalink: /
 ---
 
-Kamsi Ozorji
-
-CS [at] UTD — Incoming SWE Intern [at] Atlassian
+<div class="home-intro">
+  <div class="home-text">
+    <p>Kamsi Ozorji</p>
+    <p>CS [at] UTD — Incoming SWE Intern [at] Atlassian</p>
+  </div>
+  <img src="/images/main.png" alt="Kamsi Ozorji" class="home-avatar">
+</div>
 
 <h2 class="news-heading">News</h2>
 

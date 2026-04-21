@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}" type="image/x-icon">
   {% feed_meta %}
@@ -27,7 +25,6 @@
           <a href="{{ item.url | relative_url }}"{% if is_active %} class="active"{% endif %}>{{ item.title }}</a>
         {% endfor %}
       </nav>
-      <img src="{{ '/images/main.png' | relative_url }}" alt="{{ site.author.name }}" class="sidebar-avatar">
     </aside>
     <main class="content">
       {{ content }}

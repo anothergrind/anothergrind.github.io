@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-family: "Computer Modern", Georgia, 'Times New Roman', serif;
   color: #111;
   background: #fff;
   line-height: 1.6;
@@ -40,17 +40,6 @@ body {
   margin-bottom: 1.8rem;
   font-style: normal;
   letter-spacing: -0.02em;
-}
-
-/* Avatar */
-.sidebar-avatar {
-  display: block;
-  width: 88px;
-  height: 88px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-top: 2rem;
-  filter: grayscale(15%);
 }
 
 /* Navigation */
@@ -188,6 +177,32 @@ body {
 
 .gear-section:last-child {
   margin-bottom: 0;
+}
+
+/* Home intro */
+.home-intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-text p {
+  margin: 0;
+}
+
+.home-text p + p {
+  margin-top: 0.15rem;
+}
+
+.home-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  filter: grayscale(15%);
 }
 
 /* News heading */
