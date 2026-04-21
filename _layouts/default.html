@@ -1,31 +1,40 @@
----
-layout: compress
----
-
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}" type="image/x-icon">
+  {% feed_meta %}
+</head>
+<body>
+  <div class="wrapper">
+    <aside class="sidebar">
+      <h1 class="page-title">{{ page.title }}</h1>
+      <nav>
+        {% for item in site.data.navigation.main %}
+          {% assign is_active = false %}
+          {% if page.url == item.url %}
+            {% assign is_active = true %}
+          {% elsif item.url != '/' and page.url contains item.url %}
+            {% assign is_active = true %}
+          {% endif %}
+          <a href="{{ item.url | relative_url }}"{% if is_active %} class="active"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+    </aside>
+    <main class="content">
+      {{ content }}
+    </main>
+  </div>
+  <footer class="site-footer">
+    <span>{{ site.footer_domain | default: site.url | remove: "https://" | remove: "http://" }}</span>
+    <span>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}</span>
+  </footer>
+</body>
 </html>
