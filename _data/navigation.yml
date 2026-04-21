@@ -3,13 +3,11 @@ main:
     url: /
   - title: "About"
     url: /about/
-  - title: "Gear"
-    url: /gear/
   - title: "Projects"
     url: /projects/
-  - title: "Videos"
-    url: /videos/
   - title: "Thoughts"
     url: /thoughts/
   - title: "Contact"
     url: /contact/
+  - title: "CV"
+    url: /files/Kamsi_Ozorji_CV.pdf

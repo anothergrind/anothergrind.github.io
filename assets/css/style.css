@@ -42,6 +42,17 @@ body {
   letter-spacing: -0.02em;
 }
 
+/* Avatar */
+.sidebar-avatar {
+  display: block;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2rem;
+  filter: grayscale(15%);
+}
+
 /* Navigation */
 .sidebar nav {
   display: flex;
@@ -177,6 +188,50 @@ body {
 
 .gear-section:last-child {
   margin-bottom: 0;
+}
+
+/* News heading */
+.news-heading {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 1.8rem 0 0.6rem;
+  border-bottom: 2px solid #e06c00;
+  padding-bottom: 2px;
+}
+
+/* Projects */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.project-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+
+.project-header a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #111;
+}
+
+.project-header a:hover {
+  color: #e06c00;
+}
+
+.project-lang {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.project p {
+  margin: 0;
+  color: #333;
 }
 
 /* Footer */
