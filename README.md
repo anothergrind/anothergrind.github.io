@@ -1,96 +1,174 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# anothergrind.github.io
+**Personal portfolio and academic website for Kamsi Ozorji**
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+![Academic Pages template example](images/homepage.png "anothergrind website")
 
-# Getting Started
+## About
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+This is a personal portfolio website showcasing my academic work, projects, publications, talks, teaching experience, and blog. Built with Jekyll and hosted on GitHub Pages.
 
-See more info at https://academicpages.github.io/
+**Website:** https://anothergrind.github.io  
+**About Me:** CS Student at University of Texas at Dallas | Incoming SWE Intern @ Atlassian
 
-## Running locally
+## Site Contents
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+- **Blog:** Thoughts and reflections on computer science and tech
+- **Projects:** Showcase of personal and academic projects
+- **CV:** Interactive CV and academic profile
+- **Contact:** Ways to reach out and connect
 
-1. Clone the repository and made updates as detailed above.
+## Quick Start
 
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
+## Installation & Requirements
 
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+### System Dependencies
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
+**Required:**
+- Ruby 3.0 or higher
+- Bundler
+- Node.js
+- Git
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+**Optional:** Docker and Docker Compose (for containerized development)
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+## Development Setup
 
-## Using Docker
+### Option 1: Local Development
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+#### Prerequisites
 
-You can build and execute the container by running the following command in the repository:
+**On Linux (Ubuntu/Debian):**
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install build-essential gcc make ruby-dev ruby-bundler nodejs
+```
+
+**On macOS:**
+```bash
+brew install ruby node
+gem install bundler
+```
+
+**On Windows:**
+- Install [Ruby+Devkit](https://rubyinstaller.org/) (includes bundler)
+- Install [Node.js](https://nodejs.org/)
+- Install [Git for Windows](https://git-scm.com/download/win)
+
+#### Setup Steps
+
+1. Clone the repository:
+```bash
+git clone https://github.com/anothergrind/anothergrind.github.io.git
+cd anothergrind.github.io
+```
+
+2. Install Ruby dependencies:
+```bash
+bundle install
+```
+
+If you encounter permission errors, install gems locally:
+```bash
+bundle config set --local path 'vendor/bundle'
+bundle install
+```
+
+3. Start the development server:
+```bash
+bundle exec jekyll serve -l -H localhost
+```
+
+The site will be available at `http://localhost:4000` and will automatically rebuild on file changes.
+
+### Option 2: Docker Development
+
+Requires [Docker](https://www.docker.com/) and Docker Compose to be installed.
 
 ```bash
-chmod -R 777 .
 docker compose up
 ```
 
-You should now be able to access the website from `localhost:4000`.
+The site will be available at `http://localhost:4000`.
 
-### Using the DevContainer in VS Code
+### Option 3: VS Code Dev Container
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+If using [Visual Studio Code](https://code.visualstudio.com/):
 
-# Maintenance
+1. Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+2. Press `F1` and run **Dev Containers: Reopen in Container**
+3. VS Code will restart in the container and automatically build the site
+4. Access it at `http://localhost:4000`
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+## Project Structure
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+```
+├── _data/              # Site configuration data (authors, navigation)
+├── _drafts/            # Unpublished blog posts
+├── _includes/          # Reusable HTML components
+├── _layouts/           # Page templates
+├── _pages/             # Static pages (About, CV, Contact, etc.)
+├── _portfolio/         # Portfolio project entries
+├── _posts/             # Blog posts
+├── _publications/      # Academic publications
+├── _sass/              # Stylesheets
+├── _talks/             # Talks and presentations
+├── _teaching/          # Teaching experience entries
+├── assets/             # Images, CSS, JS
+├── files/              # Downloadable files (PDFs, etc.)
+├── images/             # Site images
+├── markdown_generator/ # Python tools for bulk content generation
+├── _config.yml         # Jekyll configuration
+└── Gemfile             # Ruby dependencies
+```
 
-## Bugfixes and enhancements
+## Content Management
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+### Adding Blog Posts
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+Create a new markdown file in `_posts/` with the filename format: `YYYY-MM-DD-title.md`
 
+```markdown
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+title: "My Post Title"
+date: 2026-05-04
+categories: [blog]
+tags: [tag1, tag2]
+---
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+Your content here...
+```
+
+### Adding Publications
+
+Create entries in `_publications/` following the existing format, or use the Python script in `markdown_generator/` to bulk-generate from a TSV file.
+
+### Adding Portfolio Items
+
+Add markdown or HTML files to `_portfolio/` directory with front matter metadata.
+
+### Generating Content from TSV
+
+Use the Jupyter notebooks in `markdown_generator/` to generate publication and talk entries in bulk from TSV files.
+
+## Technologies Used
+
+- **Jekyll** - Static site generator
+- **Ruby** - Jekyll runtime
+- **Minimal Mistakes Theme** - Base theme (customized)
+- **GitHub Pages** - Hosting
+- **Liquid** - Templating language
+- **YAML** - Data format
+- **Markdown** - Content format
+- **SCSS** - Styling
+- **Python** - Content generation tools
+- **Docker** - Containerization
+
+## License
+
+This repository uses the MIT License. See [LICENSE](LICENSE) for details.
+
+The website theme is based on [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) by Michael Rose.
+
+## Attribution
+
+This site is built using the [Academic Pages](https://academicpages.github.io/) template, which is based on the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) by Michael Rose (© 2016, released under MIT License).
