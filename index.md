@@ -14,6 +14,7 @@ permalink: /
 
 <h2 class="news-heading">News</h2>
 
+- **5/2026:** Started SWE Internship at Atlassian
 - **3/2026:** Accepted to AI4ALL's AI Ignite Program
 - **3/2026:** Accepted to Break Through Tech's AI Program
 - **2/2026:** Started Explainable AI Research at UTD, advised by Beiyu Lin
