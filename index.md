@@ -7,7 +7,7 @@ permalink: /
 <div class="home-intro">
   <div class="home-text">
     <p>Kamsi Ozorji</p>
-    <p>CS [at] UTD — Incoming SWE Intern [at] Atlassian</p>
+    <p>CS [at] UTD —  Software Engineer Intern [at] Atlassian</p>
   </div>
   <img src="/images/main.png" alt="Kamsi Ozorji" class="home-avatar">
 </div>
