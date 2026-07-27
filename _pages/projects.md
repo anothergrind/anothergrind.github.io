@@ -32,26 +32,10 @@ permalink: /projects/
 
   <div class="project">
     <div class="project-header">
-      <a href="https://github.com/anothergrind/pawpal-" target="_blank" rel="noopener">pawpal</a>
+      <a href="https://github.com/anothergrind/geomagnetic-storm-predictor" target="_blank" rel="noopener">geomagnetic storm predictor</a>
       <span class="project-lang">python</span>
     </div>
-    <p>AI-powered pet companion app — uses computer vision and NLP to identify pet breeds and answer care questions</p>
-  </div>
-
-  <div class="project">
-    <div class="project-header">
-      <a href="https://github.com/anothergrind/game-glitch-investigator" target="_blank" rel="noopener">game glitch investigator</a>
-      <span class="project-lang">python</span>
-    </div>
-    <p>AI tool that analyzes game behavior logs to detect and classify bugs — built for CodePath AI110</p>
-  </div>
-
-  <div class="project">
-    <div class="project-header">
-      <a href="https://github.com/anothergrind/Mars-Rover-" target="_blank" rel="noopener">mars rover</a>
-      <span class="project-lang">javascript</span>
-    </div>
-    <p>Mars rover simulator built for Code2College Elite 102 — navigate terrain and collect samples via keyboard controls</p>
+    <p>Forecasts geomagnetic storms from OMNI solar-wind, solar-flare, and CME data — includes a Streamlit dashboard for exploring model performance across 3/6/12/24 hour horizons</p>
   </div>
 
 </div>
