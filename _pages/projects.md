@@ -35,7 +35,7 @@ permalink: /projects/
       <a href="https://github.com/anothergrind/geomagnetic-storm-predictor" target="_blank" rel="noopener">geomagnetic storm predictor</a>
       <span class="project-lang">python</span>
     </div>
-    <p>Forecasts geomagnetic storms from OMNI solar-wind, solar-flare, and CME data — includes a Streamlit dashboard for exploring model performance across 3/6/12/24 hour horizons</p>
+    <p>Forecasts geomagnetic storms from OMNI solar-wind, solar-flare, and CME data — includes a Streamlit dashboard for exploring model performance across 3 hour horizons</p>
   </div>
 
 </div>
