@@ -185,7 +185,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 .home-text p {
@@ -206,11 +206,11 @@ body {
 }
 
 /* News heading */
-.news-heading {
+.content .news-heading {
   display: inline-block;
   font-size: 1.1rem;
   font-weight: 400;
-  margin: 1.8rem 0 0.6rem;
+  margin: 0.6rem 0;
   border-bottom: 2px solid #e06c00;
   padding-bottom: 2px;
 }
