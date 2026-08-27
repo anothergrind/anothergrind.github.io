@@ -7,7 +7,7 @@ permalink: /
 <div class="home-intro">
   <div class="home-text">
     <p>Kamsi Ozorji</p>
-    <p>CS [at] UTD/p>
+    <p>CS [at] UTD</p>
   </div>
   <img src="/images/main.png" alt="Kamsi Ozorji" class="home-avatar">
 </div>
